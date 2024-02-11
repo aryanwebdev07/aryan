@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta namme="viewport" content="with=device, initial-scalse=1.0">
+        <title>devloper</title>
+        <link rel="stylesheet" href="maindesing.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="main.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Om_symbol.svg/330px-Om_symbol.svg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ELEMENT</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">INFO</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> 
+            </nav>
+            <div class="text-box">
+                <h1>WELLCOME TO SANATNI OFFCIAL PAGE</h1>
+                <p></p>
+                <a href="" class="hero-btn">visit us to know more</a>
+            </div>
+
+        </section>
+       <!--------corse------>
+        <section class="course">
+            <h1>Course We Offers</h1>
+            <p>NA</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermedia</h3>
+                    <p>lorem dolor ...</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>lorem dolor ...</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post graduations</h3>
+                    <p>lorem dolor ...</p>
+                </div>
+            </div>
+
+
+        </section>
+        <!---------- <campus-------------------->
+
+        <section class="campus">
+            <h1>our gobal campus</h1>
+            <p>na</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="https://img.freepik.com/premium-photo/hindu-god-shiva-illustartion_862994-4533.jpg">
+                    <div class="layer">
+                        <h3>Shree Ram</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!---------JavaScript for Toggle Meny-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "200px";
+            }
+        </script>
+    </body>
+</html>
