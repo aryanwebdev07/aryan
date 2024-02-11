@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Singuo And Login</title>
+        <link rel="stylesheet" href="mlogin.css">
+    </head>
+    <body>
+        <div class="background">
+            <div class="over-back">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-512.png">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_google_plus-64.png">
+    
+                </div>
+                <form id="login" class="input-group">
+                    
+                    <input type="text" class="input-field"  placeholder="User Id" required id="uid">
+                    <input type="password" class="input-field"  placeholder="Password" required id="uidp">
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn" onclick="auth()">Log In</button>
+                </form>
+                <form id="register" class="input-group" action="connect.php" method="post">
+                    <input type="text" class="input-field"  placeholder="User Id" required name="username" />
+                    <input type="email" class="input-field"  placeholder="email id" required  name="mail"/>
+                    <input type="text" class="input-field"  placeholder="Password" required name="pass"/>
+                    <input type="checkbox" class="check-box"><span>I agree to the T&C</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+            function auth(){
+            var a = document.getElementById("uid").value;
+            var b = document.getElementById("uidp").value;
+            if (a == 'asp' && b == '00'){
+                window.location.assign('main.html');
+                alert("successfully Loged In");
+            }
+            if (a == 'aryan' && b == 'hanuman'){
+                window.location.assign('main.html');
+                alert("successfully Loged In");
+
+            }
+            else{
+                alert("Invalid");
+                return;
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
